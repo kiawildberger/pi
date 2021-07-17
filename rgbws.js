@@ -10,7 +10,7 @@ greenRGB = 0, //set starting value of GREEN variable to off (0 for common cathod
 blueRGB = 0; //set starting value of BLUE variable to off (0 for common cathode)
 
 
-ledGreen.digitalWrite(200);
+ledGreen.pwmWrite(200);
 //RESET RGB LED
 setTimeout(() => {
     ledRed.digitalWrite(0); // Turn RED LED off
