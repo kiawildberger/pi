@@ -8,6 +8,12 @@ ledGreen.digitalWrite(0)
 ledRed.digitalWrite(0)
 
 let args = process.argv
-console.log(args)
+if(!args[2] && !args[3] && !args[4]) {
+    args[2] = 50
+    args[3] = 200
+    args[4] = 100
+}
 
-// ledRed.pwnWrite()
+ledRed.pwmWrite(args[2])
+ledGreen.pwmWrite(args[3])
+ledBlue.pwmWrite(args[4])
