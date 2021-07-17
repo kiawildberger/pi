@@ -8,7 +8,6 @@ ledGreen.digitalWrite(0)
 ledRed.digitalWrite(0)
 
 let args = process.argv
-args.shift().shift()
 console.log(args)
 
 // ledRed.pwnWrite()
