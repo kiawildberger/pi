@@ -17,7 +17,7 @@ ledBlue.digitalWrite(0); // Turn BLUE LED off
 http.listen(8080); //listen to port 8080
 
 function handler (req, res) { //what to do on requests to port 8080
-  fs.readFile(__dirname + '/public/rgb.html', function(err, data) { //read file rgb.html in public folder
+  fs.readFile(__dirname + '/public/index.html', function(err, data) { //read file rgb.html in public folder
     if (err) {
       res.writeHead(404, {'Content-Type': 'text/html'}); //display 404 on error
       return res.end("404 Not Found");
