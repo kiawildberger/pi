@@ -1,7 +1,7 @@
 var Gpio = require('pigpio').Gpio,
-    ledRed = new Gpio(4, {mode: Gpio.OUTPUT}),
-    ledGreen = new Gpio(17, {mode: Gpio.OUTPUT}),
-    ledBlue = new Gpio(27, {mode: Gpio.OUTPUT});
+    ledRed = new Gpio(4, "oput"),
+    ledGreen = new Gpio(17, "out"),
+    ledBlue = new Gpio(27, "out");
 
 ledBlue.digitalWrite(0)
 ledGreen.digitalWrite(0)
