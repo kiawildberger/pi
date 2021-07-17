@@ -9,10 +9,14 @@ redRGB = 0, //set starting value of RED variable to off (0 for common cathode)
 greenRGB = 0, //set starting value of GREEN variable to off (0 for common cathode)
 blueRGB = 0; //set starting value of BLUE variable to off (0 for common cathode)
 
+
+ledGreen.digitalWrite(200);
 //RESET RGB LED
-ledRed.digitalWrite(0); // Turn RED LED off
-ledGreen.digitalWrite(0); // Turn GREEN LED off
-ledBlue.digitalWrite(0); // Turn BLUE LED off
+setTimeout(() => {
+    ledRed.digitalWrite(0); // Turn RED LED off
+    ledGreen.digitalWrite(0); // Turn GREEN LED off
+    ledBlue.digitalWrite(0); // Turn BLUE LED off
+}, 1000)
 
 http.listen(8080); //listen to port 8080
 
